@@ -1,0 +1,84 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: -10px;
+}
+
+h1.invisible {
+    display: none;
+}
+
+h1.title {
+    color: #ccc;
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+h1.line-1 {
+    font-size: 100px;
+
+    .fa {
+        color: green;
+    }
+}
+
+h1.line-2 {
+    font-size: 32px;
+}
+
+h1.line-3 {
+    font-size: 110px;
+    text-decoration: underline;
+}
+
+h1.line-4 {
+    font-size: 30px;
+}
+
+h1.line-5 {
+    margin-top: 3px;
+    font-size: 28px;
+}
+
+h1.line-6 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+h1.connection {
+    .wifi-1 {
+        font-size: 12px;
+    }
+    .wifi-2 {
+        font-size: 19px;
+    }
+    .wifi-3 {
+        font-size: 26px;
+    }
+    .wifi-4 {
+        font-size: 33px;
+    }
+    .wifi-5 {
+        font-size: 40px;
+    }
+    .wifi-6 {
+        font-size: 50px;
+        color: green;
+    }
+
+    .transparent {
+        color: transparent;
+    }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.center {
+    text-align: center;
+}
