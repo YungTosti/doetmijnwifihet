@@ -6,10 +6,12 @@ window.onload = executeAnimation();
 var inSubAnimation = false;
 var executedConnectionBarAnimation = false;
 var globalCounter = 1; // Deze nepnerd begon vanaf 1 te tellen
+var justCameFromSubAnimation = false;
 
 function executeAnimation() {
     setInterval(function() {
         if (inSubAnimation) return;
+        if (justCameFromSubAnimation) globalCounter++;
 
         toggleLineVisibility(globalCounter);
 
@@ -29,7 +31,7 @@ function executeConnectionBarAnimation() {
     executedConnectionBarAnimation = true;
     var counter = 1;
     var rounds = 0;
-    var maxRounds = 2;
+    var maxRounds = 1;
     var positive = true;
     var justSwitched = false;
 
@@ -52,7 +54,7 @@ function executeConnectionBarAnimation() {
         if (counter === 7) {
             //We hebben de online cloud laten zien, we kunnen terug naar de normale loop
             inSubAnimation = false;
-            globalCounter++;
+            justCameFromSubAnimation = true;
             return;
         }
 

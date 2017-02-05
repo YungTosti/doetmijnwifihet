@@ -3,16 +3,18 @@ body {
   margin: 0;
   padding: 0; }
 
+body {
+  background: url("../images/background-white.png") repeat; }
+
 h1 {
   margin: -10px; }
 
-h1.invisible {
-  display: none; }
-
 h1.title {
-  color: #ccc;
+  display: inline-block;
+  color: #000;
   font-size: 29px;
-  margin-bottom: 30px; }
+  margin-bottom: 10px;
+  border-bottom: 7.5px solid green; }
 
 h1.line-1 {
   font-size: 100px; }
@@ -23,10 +25,14 @@ h1.line-2 {
   font-size: 32px; }
 
 h1.line-3 {
+  display: inline-block;
   font-size: 110px;
-  text-decoration: underline; }
+  border-bottom: 10px solid green;
+  line-height: 90px;
+  margin-top: 7px; }
 
 h1.line-4 {
+  margin-top: 10px;
   font-size: 30px; }
 
 h1.line-5 {
@@ -53,10 +59,30 @@ h1.connection .wifi-6 {
 h1.connection .transparent {
   color: transparent; }
 
+h1.line-7 {
+  display: inline-block;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px; }
+  h1.line-7 p {
+    float: left;
+    font-size: 15px;
+    line-height: 11px; }
+  h1.line-7 .heart {
+    color: red; }
+  h1.line-7 span {
+    font-size: 12px; }
+  h1.line-7 a {
+    text-decoration: none; }
+
 .container {
   margin-top: 100px; }
 
 .center {
   text-align: center; }
+
+h1.invisible {
+  display: none; }
 
 /*# sourceMappingURL=doetmijnwifihet.css.map */
