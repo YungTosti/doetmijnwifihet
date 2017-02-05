@@ -1,0 +1,25 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+}
+
+h1 {
+    color: green;
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+h6 {
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #ccc;
+}
+
+.center {
+    text-align: center;
+}
