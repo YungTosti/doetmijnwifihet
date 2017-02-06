@@ -12,7 +12,7 @@ h1 {
 h1.title {
   display: inline-block;
   color: #000;
-  font-size: 29px;
+  font-size: 26px;
   margin-bottom: 10px;
   border-bottom: 7.5px solid green; }
 
@@ -25,34 +25,39 @@ h1.line-2 {
   font-size: 32px; }
 
 h1.line-3 {
+  margin-top: 10px;
+  font-size: 28px; }
+
+h1.line-4 {
   display: inline-block;
-  font-size: 110px;
+  font-size: 113px;
   border-bottom: 10px solid green;
   line-height: 90px;
   margin-top: 7px; }
 
-h1.line-4 {
-  margin-top: 10px;
-  font-size: 30px; }
-
 h1.line-5 {
-  margin-top: 3px;
-  font-size: 28px; }
+  margin-top: 15px;
+  font-size: 29px; }
 
 h1.line-6 {
-  margin-top: 10px;
-  font-size: 20px; }
+  color: green;
+  margin-top: 5px;
+  font-size: 31px; }
+  h1.line-6 .fa {
+    color: #000; }
 
 h1.connection .wifi-1 {
   font-size: 12px; }
 h1.connection .wifi-2 {
-  font-size: 19px; }
+  font-size: 18px;
+  color: green; }
 h1.connection .wifi-3 {
-  font-size: 26px; }
+  font-size: 25px; }
 h1.connection .wifi-4 {
-  font-size: 33px; }
+  font-size: 31px;
+  color: green; }
 h1.connection .wifi-5 {
-  font-size: 40px; }
+  font-size: 38px; }
 h1.connection .wifi-6 {
   font-size: 50px;
   color: green; }
@@ -67,12 +72,13 @@ h1.line-7 {
   margin-top: 20px; }
   h1.line-7 p {
     float: left;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 11px; }
   h1.line-7 span {
-    font-size: 12px; }
+    font-size: 11px; }
   h1.line-7 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
 
 .container {
   margin-top: 100px; }
@@ -81,7 +87,7 @@ h1.line-7 {
   text-align: center; }
 
 h1.invisible {
-  /*display: none;*/ }
+  display: none; }
 
 .heart {
   height: 13px; }

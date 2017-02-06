@@ -4,21 +4,25 @@
 
 window.onload = executeAnimation();
 var inSubAnimation = false;
-var executedConnectionBarAnimation = false;
+var startedConnectionBarAnimation = false;
+var finishedConnectionBarAnimation = false;
 var globalCounter = 1; // Deze nepnerd begon vanaf 1 te tellen
 var justCameFromSubAnimation = false;
 
 function executeAnimation() {
     setInterval(function() {
         if (inSubAnimation) return;
-        if (justCameFromSubAnimation) globalCounter++;
+        if (justCameFromSubAnimation) {
+            justCameFromSubAnimation = false;
+            globalCounter++;
+        }
 
         toggleLineVisibility(globalCounter);
 
-        if (globalCounter === 6 && !executedConnectionBarAnimation) {
+        if (globalCounter === 3 && !startedConnectionBarAnimation) {
             executeConnectionBarAnimation();
         }
-        else globalCounter++;
+        else if(!justCameFromSubAnimation) globalCounter++;
     }, 1500);
 }
 
@@ -28,7 +32,7 @@ function toggleLineVisibility(lineNumber) {
 
 function executeConnectionBarAnimation() {
     inSubAnimation = true;
-    executedConnectionBarAnimation = true;
+    startedConnectionBarAnimation = true;
     var counter = 1;
     var rounds = 0;
     var maxRounds = 1;
@@ -36,6 +40,7 @@ function executeConnectionBarAnimation() {
     var justSwitched = false;
 
     setInterval(function() {
+        if (finishedConnectionBarAnimation) return;
         justSwitched = false;
 
         if (counter === 5 && positive && rounds < maxRounds) {
@@ -55,6 +60,7 @@ function executeConnectionBarAnimation() {
             //We hebben de online cloud laten zien, we kunnen terug naar de normale loop
             inSubAnimation = false;
             justCameFromSubAnimation = true;
+            finishedConnectionBarAnimation = true;
             return;
         }
 
