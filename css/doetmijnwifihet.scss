@@ -1,3 +1,5 @@
+$break-small: 768px;
+
 html,
 body {
     margin: 0;
@@ -94,10 +96,6 @@ h1.line-7 {
         line-height: 11px;
     }
 
-    .heart {
-        color: red;
-    }
-
     span {
         font-size: 12px;
     }
@@ -116,5 +114,15 @@ h1.line-7 {
 }
 
 h1.invisible {
-    display: none;
+    /*display: none;*/
+}
+
+.heart {
+    height: 13px;
+}
+
+@media screen and (min-width: $break-small) {
+    h1 {
+        font-size: 20px;
+    }
 }

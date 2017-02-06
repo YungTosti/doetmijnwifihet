@@ -69,8 +69,6 @@ h1.line-7 {
     float: left;
     font-size: 15px;
     line-height: 11px; }
-  h1.line-7 .heart {
-    color: red; }
   h1.line-7 span {
     font-size: 12px; }
   h1.line-7 a {
@@ -83,6 +81,13 @@ h1.line-7 {
   text-align: center; }
 
 h1.invisible {
-  display: none; }
+  /*display: none;*/ }
+
+.heart {
+  height: 13px; }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=doetmijnwifihet.css.map */
