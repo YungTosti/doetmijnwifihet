@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Doet mijn wifi het?</title>
+    <title>Doet mijn Wi-Fi het?</title>
     <meta name="description" content="Doet mijn Wi-Fi het? Laad deze pagina en je weet het, als hij laad werkt je Wi-Fi!">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <meta property="og:url"           content="http://doetmijnwifihet.nl" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Doet mijn Wi-Fi het?" />
+    <meta property="og:description"   content="Doet mijn Wi-Fi het? Laad deze pagina en je weet het, als hij laad werkt je Wi-Fi!" />
 
     <link rel="stylesheet" href="./css/simplesharingbuttons.css" type="text/css" />
     <link rel="stylesheet" href="./css/doetmijnwifihet.css?v=13371" type="text/css" />
@@ -15,7 +20,7 @@
     <div class="center">
         <h1 class="title">Doet mijn Wi-Fi het?</h1>
         <h1 class="line-1 invisible"><i class="fa fa-thumbs-o-up "></i> JA</h1>
-        <h1 class="line-2 invisible">JA HIJ WERKT </h1>
+        <h1 class="line-2 invisible"><span>JA</span> HIJ WERKT </h1>
         <h1 class="line-3 connection invisible">
             <i class="fa fa-wifi wifi-1 transparent"></i>
             <i class="fa fa-wifi wifi-2 transparent"></i>
@@ -36,9 +41,21 @@
                 </a>
             </p>
             <ul class="share-buttons">
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdoetmijnwifihet.nl&t=Doet%20mijn%20wifi%20het%3F" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="images/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
-                <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fdoetmijnwifihet.nl&text=Doet%20mijn%20wifi%20het%3F:%20http%3A%2F%2Fdoetmijnwifihet.nl" target="_blank" title="Tweet"><img alt="Tweet" src="images/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
-                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdoetmijnwifihet.nl" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="images/social_flat_rounded_rects_svg/Google+.svg"></a></li>
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//doetmijnwifihet.nl" title="Share on Facebook" target="_blank">
+                        <img alt="Share on Facebook" src="images/social_flat_rounded_rects_svg/Facebook.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/home?status=Mijn%20Wi-Fi%20doet%20het!%20%23doetmijnwifihet%20http%3A//doetmijnwifihet.nl" target="_blank" title="Tweet">
+                        <img alt="Tweet" src="images/social_flat_rounded_rects_svg/Twitter.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/share?url=http%3A%2F%2Fdoetmijnwifihet.nl" target="_blank" title="Share on Google+">
+                        <img alt="Share on Google+" src="images/social_flat_rounded_rects_svg/Google+.svg">
+                    </a>
+                </li>
             </ul>
         </h1>
     </div>
@@ -53,6 +70,13 @@
     ga('send', 'pageview');
 
 </script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <script src="./js/jquery-3.1.1.min.js"></script>
 <script src="./js/doetmijnwifihet.js?v=13371"></script>
 </body>

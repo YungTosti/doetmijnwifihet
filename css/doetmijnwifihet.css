@@ -23,6 +23,8 @@ h1.line-1 {
 
 h1.line-2 {
   font-size: 32px; }
+  h1.line-2 span {
+    color: green; }
 
 h1.line-3 {
   margin-top: 10px;
@@ -75,7 +77,8 @@ h1.line-7 {
     font-size: 17px;
     line-height: 11px; }
   h1.line-7 span {
-    font-size: 11px; }
+    font-size: 11px;
+    color: green; }
   h1.line-7 a {
     text-decoration: none;
     color: black; }
