@@ -12,109 +12,110 @@ body {
 
 h1 {
     margin: -10px;
-}
 
-h1.title {
-    display: inline-block;
-    color: #000;
-    font-size: 26px;
-    margin-bottom: 10px;
-    border-bottom: 7.5px solid green;
-}
 
-h1.line-1 {
-    font-size: 100px;
-
-    .fa {
-        color: green;
-    }
-}
-
-h1.line-2 {
-    font-size: 32px;
-
-    span {
-        color: green;
-    }
-}
-
-h1.line-3 {
-    margin-top: 10px;
-    font-size: 28px;
-}
-
-h1.line-4 {
-    display: inline-block;
-    font-size: 113px;
-    border-bottom: 10px solid green;
-    line-height: 90px;
-    margin-top: 7px;
-}
-
-h1.line-5 {
-    margin-top: 15px;
-    font-size: 29px;
-}
-
-h1.line-6 {
-    color: green;
-    margin-top: 5px;
-    font-size: 31px;
-
-    .fa {
+    &.title {
+        display: inline-block;
         color: #000;
+        font-size: 26px;
+        margin-bottom: 10px;
+        border-bottom: 7.5px solid green;
     }
-}
 
-h1.connection {
-    .wifi-1 {
-        font-size: 12px;
+    &.line-1 {
+        font-size: 100px;
+
+        .fa {
+            color: green;
+        }
     }
-    .wifi-2 {
-        font-size: 18px;
+
+    &.line-2 {
+        font-size: 32px;
+
+        span {
+            color: green;
+        }
+    }
+
+    &.line-3 {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+    &.line-4 {
+        display: inline-block;
+        font-size: 113px;
+        border-bottom: 10px solid green;
+        line-height: 90px;
+        margin-top: 7px;
+    }
+
+    &.line-5 {
+        margin-top: 15px;
+        font-size: 29px;
+    }
+
+    &.line-6 {
         color: green;
-    }
-    .wifi-3 {
-        font-size: 25px;
-    }
-    .wifi-4 {
+        margin-top: 5px;
         font-size: 31px;
-        color: green;
-    }
-    .wifi-5 {
-        font-size: 38px;
-    }
-    .wifi-6 {
-        font-size: 50px;
-        color: green;
+
+        .fa {
+            color: #000;
+        }
     }
 
-    .transparent {
-        color: transparent;
+    &.connection {
+        .wifi-1 {
+            font-size: 12px;
+        }
+        .wifi-2 {
+            font-size: 18px;
+            color: green;
+        }
+        .wifi-3 {
+            font-size: 25px;
+        }
+        .wifi-4 {
+            font-size: 31px;
+            color: green;
+        }
+        .wifi-5 {
+            font-size: 38px;
+        }
+        .wifi-6 {
+            font-size: 50px;
+            color: green;
+        }
+
+        .transparent {
+            color: transparent;
+        }
     }
-}
 
-h1.line-7 {
-    display: inline-block;
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 4px;
-    margin-top: 20px;
+    &.line-7 {
+        display: inline-block;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 20px;
 
-    p {
-        float: left;
-        font-size: 17px;
-        line-height: 11px;
-    }
+        p {
+            float: left;
+            font-size: 17px;
+            line-height: 11px;
+        }
 
-    span {
-        font-size: 11px;
-        color: green;
-    }
+        span {
+            font-size: 11px;
+            color: green;
+        }
 
-    a {
-        text-decoration: none;
-        color: black;
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 
